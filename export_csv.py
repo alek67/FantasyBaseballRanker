@@ -13,7 +13,7 @@ pit_df = getPitchers()
 ranked_sp = rankSP(pit_df)
 ranked_rp = rankRP(pit_df)
 
-# --- Hitters CSV ---
+# Hitters CSV
 hit_z_cols = [f"z_{s}" for s in SCORING_STATS]
 hit_cols = ["rank", "PlayerName", "Team", "Pos", "PA"] + SCORING_STATS + hit_z_cols + ["score_zscore"]
 hit_cols = [c for c in hit_cols if c in ranked_hitters.columns]
@@ -22,7 +22,7 @@ hit_cols.insert(1, "round")
 ranked_hitters[hit_cols].to_csv("hitters_ranked.csv", index=False)
 print("Saved hitters_ranked.csv")
 
-# --- SP CSV ---
+#SP CSV
 sp_z_cols = [f"z_{s}" for s in SP_STATS]
 sp_cols = ["rank", "PlayerName", "Team", "IP"] + SP_STATS + sp_z_cols + ["score_zscore"]
 sp_cols = [c for c in sp_cols if c in ranked_sp.columns]
@@ -31,7 +31,7 @@ sp_cols.insert(1, "round")
 ranked_sp[sp_cols].to_csv("sp_ranked.csv", index=False)
 print("Saved sp_ranked.csv")
 
-# --- RP CSV ---
+#RP CSV
 rp_z_cols = [f"z_{s}" for s in RP_STATS]
 rp_cols = ["rank", "PlayerName", "Team", "IP"] + RP_STATS + rp_z_cols + ["score_zscore"]
 rp_cols = [c for c in rp_cols if c in ranked_rp.columns]
