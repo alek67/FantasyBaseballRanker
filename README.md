@@ -1,4 +1,4 @@
-#TLDR
+# TLDR
 Draft based on what stats you need more of. i.e. Dont pick high overall z score every time because you might end up with a team full of high base stealers, accounting for only 1 category
 
 # 2026 Fantasy Baseball Ranker
