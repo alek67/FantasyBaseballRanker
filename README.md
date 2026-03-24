@@ -1,3 +1,6 @@
+#TLDR
+Draft based on what stats you need more of. i.e. Dont pick high overall z score every time because you might end up with a team full of high base stealers, accounting for only 1 category
+
 # 2026 Fantasy Baseball Ranker
 
 This ranker pulls ATC projections from FanGraphs and ranks hitters, starting pitchers, and relievers for fantasy baseball drafts. The core idea came from this YouTube video: https://www.youtube.com/watch?v=vumd2oWYpLg&t=201s, though the methodology here differs in a few important ways explained below.
