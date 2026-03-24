@@ -23,7 +23,7 @@ z = (player stat - baseline average) / baseline standard deviation
 
 A commenter named ereaven on the video above pointed out that the ratio method shown in the video undervalues rate stats like AVG because they have much less variance than counting stats, making it impossible to be 3x the average in batting average the way you could in stolen bases. Their suggested fix was a z-score approach, which is what this ranker uses.
 
-AVG and OBP are treated differently from the counting stats because they are rate stats. The raw value does not reflect playing time at all — a player hitting .320 in 200 plate appearances has the same AVG as a player hitting .320 in 600 plate appearances, but the second player is far more valuable because their at-bats have a much larger effect on your team's cumulative average. To account for this, AVG and OBP are converted to a marginal contribution before z-scoring:
+AVG and OBP are treated differently from the counting stats because they are rate stats. The raw value does not reflect playing time at all a player hitting .320 in 200 plate appearances has the same AVG as a player hitting .320 in 600 plate appearances, but the second player is far more valuable because their at-bats have a much larger effect on your team's cumulative average. To account for this, AVG and OBP are converted to a marginal contribution before z-scoring:
 
 marginal = (player rate - baseline rate) x player PA
 
@@ -47,7 +47,7 @@ ERA and WHIP are lower-is-better stats, so their z-scores are negated. A pitcher
 
 Relievers are any pitcher projected for under 100 innings. The baseline is the top 20 relievers by saves, which represents the realistic pool of closers that get drafted.
 
-The scoring categories for relievers are SV, SO, ERA, and WHIP. Wins are excluded for the same reason saves are excluded from starters — they rarely accumulate in a meaningful way for relievers.
+The scoring categories for relievers are SV, SO, ERA, and WHIP. Wins are excluded for the same reason saves are excluded from starters they rarely accumulate in a meaningful way for relievers.
 
 ERA and WHIP are handled the same way as with starters.
 
