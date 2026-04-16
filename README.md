@@ -1,4 +1,4 @@
-# TLDR
+# How to use
 Draft based on your team's current category needs rather than blindly taking the highest z-score every time. I.e If you already have stolen bases covered, a player's SB contribution is less valuable to you than it appears on paper. Focus on the categories you're still in need of.
 
 # 2026 Fantasy Baseball Ranker
